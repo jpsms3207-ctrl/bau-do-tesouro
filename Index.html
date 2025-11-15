@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Baú do Tesouro</title>
+  <style>
+    body {
+      background-color: #ADD8E6;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .titulo {
+      font-size: 22px;
+      margin-bottom: 30px;
+      color: #FFD700;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+      animation: pulsar 1.5s infinite;
+    }
+
+    @keyframes pulsar {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.8; }
+    }
+
+    #bau {
+      width: 300px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    #bau:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 40px gold;
+    }
+
+    .texto-preto {
+      color: #000;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 80%;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+
+    .card h2 {
+      color: red;
+      font-size: 26px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .card p {
+      color: #333;
+      font-size: 18px;
+      margin: 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p class="titulo"><strong>💎 Clique e abra seu baú!</strong></p>
+
+  <!-- Baú fechado -->
+  <img id="bau" src="bau.jpeg" alt="Baú do Tesouro">
+
+  <p class="texto-preto">
+    ✨ Clique no baú e você pode ter a chance de ganhar um prêmio ou até mesmo um PIX!
+  </p>
+
+  <div class="card">
+    <h2>⚠️ ATENÇÃO</h2>
+    <p>Não nos responsabilizamos pela taxa do jogo ao receber o prêmio.<br>Jogue com responsabilidade.</p>
+  </div>
+
+  <script>
+    const bau = document.getElementById("bau");
+    bau.addEventListener("click", () => {
+      bau.style.transform = "scale(1.2)";
+      bau.style.boxShadow = "0 0 60px gold";
+
+      setTimeout(() => {
+        window.open("https://www.effectivegatecpm.com/dgkqm40k?key=f644c0086d2f53e6dae8fa9b7281f009", "_blank");
+      }, 200); // tempo curtinho pra parecer que abriu
+    });
+  </script>
+</body>
+</html>
